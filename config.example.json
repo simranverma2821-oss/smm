@@ -19,14 +19,16 @@
     "dlt_template_id": "REPLACE_WITH_APPROVED_DLT_TEMPLATE_ID",
     "templates": {
       "en": "Dear {name}, your LPG KYC (Consumer {consumer_id}) is due by {due_date}. Complete it FREE from home in 5 min. How-to video: {kyc_video}. Help: {helpline}. -{distributor}",
-      "hi": "प्रिय {name}, आपकी LPG KYC (उपभोक्ता {consumer_id}) {due_date} तक करानी है. घर बैठे 5 मिनट में मुफ्त करें. वीडियो: {kyc_video}. सहायता: {helpline}. -{distributor}"
+      "hi": "प्रिय {name}, आपकी LPG KYC (उपभोक्ता {consumer_id}) {due_date} तक करानी है. घर बैठे 5 मिनट में मुफ्त करें. वीडियो: {kyc_video}. सहायता: {helpline}. -{distributor}",
+      "pa": "ਪਿਆਰੇ {name}, ਤੁਹਾਡੀ LPG KYC (ਖਪਤਕਾਰ {consumer_id}) {due_date} ਤੱਕ ਕਰਾਉਣੀ ਹੈ। ਘਰ ਬੈਠੇ 5 ਮਿੰਟ ਵਿੱਚ ਮੁਫ਼ਤ ਕਰੋ। ਵੀਡੀਓ: {kyc_video}. ਮਦਦ: {helpline}. -{distributor}"
     }
   },
 
   "ivr": {
     "scripts": {
       "en": "Hello {name}. This is a KYC reminder from {distributor}. Your LPG connection {consumer_id} needs KYC re-verification by {due_date}. You can complete it free from home. Press 1 to receive the step-by-step video link on SMS, or press 2 to speak to our helpline.",
-      "hi": "नमस्ते {name}. {distributor} की ओर से KYC अनुस्मारक. आपके LPG कनेक्शन {consumer_id} की KYC {due_date} तक करानी है. आप इसे घर बैठे मुफ्त पूरा कर सकते हैं. वीडियो लिंक SMS पर पाने के लिए 1 दबाएँ, या हेल्पलाइन से बात करने के लिए 2 दबाएँ."
+      "hi": "नमस्ते {name}. {distributor} की ओर से KYC अनुस्मारक. आपके LPG कनेक्शन {consumer_id} की KYC {due_date} तक करानी है. आप इसे घर बैठे मुफ्त पूरा कर सकते हैं. वीडियो लिंक SMS पर पाने के लिए 1 दबाएँ, या हेल्पलाइन से बात करने के लिए 2 दबाएँ.",
+      "pa": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ {name}। {distributor} ਵੱਲੋਂ KYC ਯਾਦ-ਦਹਾਨੀ। ਤੁਹਾਡੇ LPG ਕਨੈਕਸ਼ਨ {consumer_id} ਦੀ KYC {due_date} ਤੱਕ ਕਰਾਉਣੀ ਹੈ। ਤੁਸੀਂ ਇਹ ਘਰ ਬੈਠੇ ਮੁਫ਼ਤ ਪੂਰੀ ਕਰ ਸਕਦੇ ਹੋ। ਵੀਡੀਓ ਲਿੰਕ SMS 'ਤੇ ਪਾਉਣ ਲਈ 1 ਦਬਾਓ, ਜਾਂ ਹੈਲਪਲਾਈਨ ਨਾਲ ਗੱਲ ਕਰਨ ਲਈ 2 ਦਬਾਓ।"
     }
   }
 }

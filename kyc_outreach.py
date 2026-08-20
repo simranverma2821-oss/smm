@@ -27,6 +27,7 @@ import json
 import os
 import re
 import sys
+import urllib.parse
 from datetime import datetime, date
 
 DEFAULT_CONFIG = "config.json"
@@ -147,8 +148,12 @@ def process(input_path, cfg, outdir):
               "the 'no number' worklist. Check column_aliases in config.json.")
 
     seen_phones = set()
-    segments = {"sms": [], "ivr": [], "no_number": [], "deceased": []}
+    segments = {"sms": [], "whatsapp": [], "ivr": [], "no_number": [], "deceased": []}
     master = []
+
+    # pick short or full SMS text based on config toggle
+    use_short = cfg["sms"].get("use_short", False)
+    sms_key = "short_templates" if use_short and "short_templates" in cfg["sms"] else "templates"
 
     for row in rows:
         name = (row.get(col_name, "") or "").strip() if col_name else ""
@@ -225,9 +230,24 @@ def process(input_path, cfg, outdir):
                 "language": lang,
                 "template_id": cfg["sms"]["dlt_template_id"],
                 "sender_id": cfg["sms"]["dlt_sender_id"],
-                "message": render(cfg["sms"]["templates"].get(lang,
-                             cfg["sms"]["templates"]["en"]), vars_),
+                "message": render(cfg["sms"][sms_key].get(lang,
+                             cfg["sms"][sms_key]["en"]), vars_),
             })
+            # same reachable customers also get a WhatsApp message (cheaper for
+            # Punjabi/Hindi, and can carry the video). wa_link = manual send.
+            if "whatsapp" in cfg:
+                wa_msg = render(cfg["whatsapp"]["templates"].get(lang,
+                                cfg["whatsapp"]["templates"]["en"]), vars_)
+                segments["whatsapp"].append({
+                    "phone": phone,
+                    "consumer_id": consumer_id,
+                    "name": vars_["name"],
+                    "language": lang,
+                    "template_name": cfg["whatsapp"].get("template_name", ""),
+                    "message": wa_msg,
+                    "wa_link": "https://wa.me/91" + phone + "?text="
+                               + urllib.parse.quote(wa_msg),
+                })
             # good numbers also get queued for an IVR follow-up wave
             segments["ivr"].append({
                 "phone": phone,
@@ -293,6 +313,9 @@ def write_outputs(segments, master, outdir, cfg):
     write_csv(os.path.join(outdir, "sms_campaign.csv"), segments["sms"],
               ["phone", "consumer_id", "name", "language", "sender_id",
                "template_id", "message"])
+    write_csv(os.path.join(outdir, "whatsapp_campaign.csv"), segments["whatsapp"],
+              ["phone", "consumer_id", "name", "language", "template_name",
+               "message", "wa_link"])
     write_csv(os.path.join(outdir, "ivr_campaign.csv"), segments["ivr"],
               ["phone", "consumer_id", "name", "language", "wave", "ivr_script"])
     write_csv(os.path.join(outdir, "worklist_no_number.csv"), segments["no_number"],
@@ -313,6 +336,7 @@ def write_outputs(segments, master, outdir, cfg):
 def build_summary(segments, master, cfg):
     total = len(master)
     n_sms = len(segments["sms"])
+    n_wa = len(segments["whatsapp"])
     n_ivr = len(segments["ivr"])
     n_none = len(segments["no_number"])
     n_dead = len(segments["deceased"])
@@ -323,6 +347,7 @@ def build_summary(segments, master, cfg):
         "=" * 60,
         f" Total rows read ............. {total}",
         f" SMS campaign (reachable) .... {n_sms}",
+        f" WhatsApp campaign ........... {n_wa}  -> whatsapp_campaign.csv",
         f" IVR campaign (all waves) .... {n_ivr}",
         f" No / invalid number ......... {n_none}  -> worklist_no_number.csv",
         f" Deceased (transfer) ......... {n_dead}  -> worklist_deceased.csv",

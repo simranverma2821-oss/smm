@@ -21,6 +21,21 @@
       "en": "Dear {name}, your LPG KYC (Consumer {consumer_id}) is due by {due_date}. Complete it FREE from home in 5 min. How-to video: {kyc_video}. Help: {helpline}. -{distributor}",
       "hi": "प्रिय {name}, आपकी LPG KYC (उपभोक्ता {consumer_id}) {due_date} तक करानी है. घर बैठे 5 मिनट में मुफ्त करें. वीडियो: {kyc_video}. सहायता: {helpline}. -{distributor}",
       "pa": "ਪਿਆਰੇ {name}, ਤੁਹਾਡੀ LPG KYC (ਖਪਤਕਾਰ {consumer_id}) {due_date} ਤੱਕ ਕਰਾਉਣੀ ਹੈ। ਘਰ ਬੈਠੇ 5 ਮਿੰਟ ਵਿੱਚ ਮੁਫ਼ਤ ਕਰੋ। ਵੀਡੀਓ: {kyc_video}. ਮਦਦ: {helpline}. -{distributor}"
+    },
+    "use_short": false,
+    "short_templates": {
+      "en": "LPG KYC due {due_date}. Do it FREE at home: {kyc_video} Help {helpline} -{distributor}",
+      "hi": "LPG KYC {due_date} तक बाकी. घर से मुफ्त करें: {kyc_video} मदद {helpline} -{distributor}",
+      "pa": "LPG KYC {due_date} ਤੱਕ ਬਾਕੀ. ਘਰੋਂ ਮੁਫ਼ਤ ਕਰੋ: {kyc_video} ਮਦਦ {helpline} -{distributor}"
+    }
+  },
+
+  "whatsapp": {
+    "template_name": "kyc_reminder_util",
+    "templates": {
+      "en": "Dear {name}, your LPG KYC (Consumer {consumer_id}) is due by {due_date}. It is FREE and takes 5 minutes from home. Watch how: {kyc_video}\nNeed help? Call {helpline}.\n-{distributor}",
+      "hi": "प्रिय {name}, आपकी LPG KYC (उपभोक्ता {consumer_id}) {due_date} तक करानी है। यह मुफ्त है और घर बैठे 5 मिनट में हो जाती है। ऐसे करें: {kyc_video}\nमदद के लिए कॉल करें {helpline}.\n-{distributor}",
+      "pa": "ਪਿਆਰੇ {name}, ਤੁਹਾਡੀ LPG KYC (ਖਪਤਕਾਰ {consumer_id}) {due_date} ਤੱਕ ਕਰਾਉਣੀ ਹੈ। ਇਹ ਮੁਫ਼ਤ ਹੈ ਅਤੇ ਘਰ ਬੈਠੇ 5 ਮਿੰਟ ਵਿੱਚ ਹੋ ਜਾਂਦੀ ਹੈ। ਇੰਝ ਕਰੋ: {kyc_video}\nਮਦਦ ਲਈ ਕਾਲ ਕਰੋ {helpline}.\n-{distributor}"
     }
   },
 

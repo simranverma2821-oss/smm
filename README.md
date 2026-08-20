@@ -23,6 +23,7 @@ Outputs land in `./output/`.
 | File | What to do with it |
 |------|--------------------|
 | `sms_campaign.csv` | Upload to your DLT-registered SMS gateway |
+| `whatsapp_campaign.csv` | Upload to your WhatsApp Business API provider (cheapest for Punjabi/Hindi). Each row also has a `wa_link` — a tap-to-send link staff can use by hand, no API needed |
 | `ivr_campaign.csv` | Upload to your IVR / voice-call provider (2 waves) |
 | `worklist_no_number.csv` | Delivery staff capture number on next cylinder drop |
 | `worklist_deceased.csv` | Start Transfer of Connection with the family |
@@ -42,6 +43,10 @@ Everything lives in `config.json`:
 - `sms.dlt_sender_id` / `sms.dlt_template_id` — your approved DLT header + template id.
 - `sms.templates` / `ivr.scripts` — message text per language (`en`, `hi` shipped; add more).
 - `helpline_number`, `kyc_help_video`, `distributor_name`.
+
+### Cutting cost (Punjabi/Hindi are ~3x the SMS length of English)
+- **Short SMS:** set `"use_short": true` in `config.json` → uses the shorter `short_templates`, roughly a third of the SMS cost. Details then go in the IVR call / WhatsApp instead.
+- **WhatsApp:** cheapest per message for Punjabi/Hindi and carries the video. Reaches smartphone users only. Uses `whatsapp.templates`; register the template text with your provider under `whatsapp.template_name`.
 
 > The shipped SMS/IVR wording must match the text you register on DLT **word for word**
 > (only the `{...}` variables may differ). Register the template first, then paste the

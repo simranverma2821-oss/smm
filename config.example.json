@@ -1,0 +1,32 @@
+{
+  "distributor_name": "Your Gas Agency",
+  "helpline_number": "1800-XXX-XXXX",
+  "kyc_help_video": "https://youtu.be/YOUR_HOME_KYC_VIDEO",
+  "default_language": "en",
+
+  "column_aliases": {
+    "name": ["name", "customer name", "consumer name", "cust name"],
+    "phone": ["mobile", "mobile no", "phone", "phone number", "contact", "contact no", "mobile number"],
+    "status": ["status", "remarks", "remark", "kyc status", "notes", "comment"],
+    "due_date": ["kyc due date", "due date", "kyc due", "due", "kyc date"],
+    "consumer_id": ["consumer id", "consumer number", "consumer no", "lpg id", "connection no", "id"],
+    "language": ["language", "lang", "preferred language"],
+    "address": ["address", "addr", "residence", "location"]
+  },
+
+  "sms": {
+    "dlt_sender_id": "BPCLKY",
+    "dlt_template_id": "REPLACE_WITH_APPROVED_DLT_TEMPLATE_ID",
+    "templates": {
+      "en": "Dear {name}, your LPG KYC (Consumer {consumer_id}) is due by {due_date}. Complete it FREE from home in 5 min. How-to video: {kyc_video}. Help: {helpline}. -{distributor}",
+      "hi": "प्रिय {name}, आपकी LPG KYC (उपभोक्ता {consumer_id}) {due_date} तक करानी है. घर बैठे 5 मिनट में मुफ्त करें. वीडियो: {kyc_video}. सहायता: {helpline}. -{distributor}"
+    }
+  },
+
+  "ivr": {
+    "scripts": {
+      "en": "Hello {name}. This is a KYC reminder from {distributor}. Your LPG connection {consumer_id} needs KYC re-verification by {due_date}. You can complete it free from home. Press 1 to receive the step-by-step video link on SMS, or press 2 to speak to our helpline.",
+      "hi": "नमस्ते {name}. {distributor} की ओर से KYC अनुस्मारक. आपके LPG कनेक्शन {consumer_id} की KYC {due_date} तक करानी है. आप इसे घर बैठे मुफ्त पूरा कर सकते हैं. वीडियो लिंक SMS पर पाने के लिए 1 दबाएँ, या हेल्पलाइन से बात करने के लिए 2 दबाएँ."
+    }
+  }
+}

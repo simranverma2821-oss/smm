@@ -1,0 +1,10 @@
+# Never commit real customer data or the live config (contains your DLT ids/links)
+config.json
+output/
+*.xlsx
+*.xls
+# keep the sample, ignore any other real exports
+/*.csv
+!sample_data/customers_sample.csv
+__pycache__/
+*.pyc

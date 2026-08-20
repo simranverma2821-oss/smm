@@ -1,0 +1,13 @@
+Consumer ID,Customer Name,Mobile No,KYC Due Date,Status,Language,Address
+IND100001,Ramesh Kumar,9876543210,2026-08-25,Pending,hi,"12 MG Road, Kanpur"
+IND100002,Sunita Devi,08123456789,2026-08-22,Pending,hi,"45 Nehru Nagar, Kanpur"
+IND100003,Abdul Karim,+91 99887 76655,2026-09-01,Pending,en,"7 Station Rd, Lucknow"
+IND100004,Priya Sharma,98765,2026-08-20,Wrong number,hi,"3 Civil Lines, Kanpur"
+IND100005,Mohan Lal,,2026-08-18,Pending - no mobile,hi,"9 Gandhi Chowk, Unnao"
+IND100006,Late Shyam Singh,9812345678,2026-08-15,Customer deceased,hi,"22 Mall Rd, Kanpur"
+IND100007,Farida Begum,9800011122,2026-08-28,Switched off / not reachable,en,"5 Park St, Lucknow"
+IND100008,Ramesh Kumar,9876543210,2026-08-25,Duplicate entry,hi,"12 MG Road, Kanpur"
+IND100009,Deepak Verma,9765432109,2026-08-30,Pending,en,"88 Ring Rd, Kanpur"
+IND100010,Anita Yadav,1234567890,2026-08-19,Pending,hi,"14 Kalyanpur, Kanpur"
+IND100011,Gopal Das,9999999999,2026-08-21,Pending,hi,"2 Sarai, Unnao"
+IND100012,Kavita Nair,00,2026-08-24,No response NR,en,"6 Lake View, Lucknow"

@@ -22,6 +22,8 @@ We build one W at a time so every later decision (targeting, messaging, pricing,
 
 Custom AI integration is our differentiator. It is what Western clients are actively paying for right now.
 
+Note on audience: HS sells to both technical buyers (CTOs, founders, and other agencies who want us white-label) and non-technical buyers (business owners, ops, government). The "What" is written in two registers below so we can speak to either without dumbing anything down for the technical side.
+
 ---
 
 ## The CARE Prompt (customized for HS)
@@ -48,22 +50,36 @@ Your result might look like this: "Humble Solutions helps companies..."
 
 ---
 
-## The "What" (our answer, under 100 words)
+## The "What" — two registers, same truth
 
-Humble Solutions builds custom software for businesses. We make mobile apps for Android and iPhone, we build websites and web apps, and we add smart AI features into the software companies already use. In short, if a business has an app idea, or wants its existing software to be smarter with AI, we build it for them reliably.
+We sell to a mix of buyers, and they do not all want the same words. The layman version below is for one job only: explaining HS to a stranger, per the CARE prompt. It is not the canonical answer. Match the register to the buyer.
+
+### A. Technical register (for CTOs, founders, engineering managers, and white-label agency partners)
+
+Humble Solutions is a product engineering team. We build native Android (Kotlin, Jetpack Compose), native iOS (Swift), and cross-platform mobile (React Native), plus web apps and backends on React and Node.js. Our differentiator is custom AI integration: we embed LLMs and AI workflows into existing products reliably. Available for full builds, dedicated developers, or white-label delivery behind your agency.
+
+### B. Business register (for owners, ops leaders, non-technical buyers)
+
+Humble Solutions builds custom software for businesses. We make mobile apps for Android and iPhone, we build websites and web apps, and we add smart AI features into the software companies already use. If you have an app idea, or want your existing software to be smarter with AI, we build it for them reliably.
 
 ---
 
 ## Short versions (for reuse)
 
-**One line:**
-We build custom software, mobile apps, web apps, and backends, and we add AI into software reliably.
+**One line (neutral):**
+We build custom mobile apps, web apps, and backends, and we integrate AI into software reliably.
 
-**Elevator (spoken):**
-We are a software team. We build Android and iPhone apps, we build websites and web apps, and we plug AI into the tools businesses already run. If you can imagine it as an app or a smarter workflow, we can build it.
+**Technical one-liner (buyer knows tech):**
+Native iOS and Android, React Native, React and Node backends, plus custom AI integration. Full builds, dedicated devs, or white-label.
+
+**Elevator (spoken, mixed room):**
+We are a software engineering team. We build iOS and Android apps, web apps and backends, and we integrate AI into products. We work as a full build team, as dedicated developers, or as the white-label team behind other agencies.
 
 **AI-first line (for Western outreach):**
-We help companies add AI into their existing software, and we build the mobile and web apps around it.
+We integrate AI into your existing software, and we build the mobile and web apps around it.
+
+**White-label line (for agencies):**
+We are the engineering team behind your agency. Native mobile, web, backend, and AI, delivered under your brand.
 
 ---
 

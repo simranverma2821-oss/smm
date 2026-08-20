@@ -54,24 +54,43 @@ Team is the founder plus 2 to 3 people. Roles below. If only two others are avai
 
 ---
 
-## Pillar 2 — Content (Demand Generation)
+## Pillar 2 — Content: Founder-Led Personal Brands (Demand Generation)
 
-**Owner:** F for LinkedIn voice, CL for production and repurposing. **Priority:** launch week 1.
+**Owner:** Founders own their voice and posting. CL owns production, editing, repurposing, and scheduling. **Priority:** launch week 1.
 
-**Decision:** LinkedIn is the primary channel because that is where agency owners and founders sit. X is secondary. Instagram and TikTok are repurpose targets, not the origin. Create once on LinkedIn, repurpose everywhere.
+**Core decision:** We do not build a faceless company page. We build **strong personal brands for the HS founders**, and funnel that audience to HS. Agency owners and founders (our Tier 1) trust and follow people, not logos. They follow a founder for months, then hand work to that founder's company. The personal brand is the top of the funnel. HS is the destination.
 
-**What to post (from the pain points in `03-why.md`):**
-- Proof and process: how we build reliably, behind the scenes, AI integration case snippets
-- Point of view: takes on AI in software, agency delivery, offshore quality
-- Client outcomes: before and after, problems removed
+**Why founder-led beats company-led:**
+- Higher trust and reach. People engage with a face and a story, not a brand account.
+- Warm inbound. Followers who trust the founder arrive pre-sold.
+- Compounding. A personal brand keeps paying off for years and is hard for competitors to copy.
+
+**Channels:** LinkedIn is primary, because agency owners and founders sit there. X is secondary. Instagram, YouTube, and TikTok are repurpose targets. Create once on LinkedIn, repurpose everywhere.
+
+**What each founder posts (personal brand content pillars):**
+- **Personal story and journey:** building HS, lessons, wins and failures, the human behind the work.
+- **Point of view:** strong takes on AI in software, agency delivery, offshore quality, shipping fast.
+- **Build in public:** what we are building, how we solve real problems, behind the scenes.
+- **Teaching and value:** practical tips agencies and founders can use, so the audience gets value for free.
+- **Client outcomes:** before and after, problems removed, told as a story not a brochure.
+
+Keep it human first. HS is mentioned naturally as "my company," never as a hard sell. The brand earns attention; HS quietly captures it.
+
+**The bridge (how personal brand traffic becomes HS pipeline) — this is the point of the whole pillar:**
+- Founder bio and profile clearly state what HS does, with a CTA and a link (booking link or HS site).
+- LinkedIn Featured section and pinned posts point to HS case studies and the offer.
+- Client outcome posts name HS as the team that delivered.
+- A simple call to action in content, for example "we help agencies add AI and ship mobile apps, DM me."
+- Optional lead magnet or newsletter that collects warm followers and routes them to HS.
+- Warm followers who DM go into the same tracker as community and outreach leads, then to the Conversion Engine.
 
 **Automation, done safely:**
 - Automate scheduling, repurposing, and social listening only.
-- Never automate DMs or comments. Automated outreach gets accounts banned and destroys trust with technical buyers. Automate production, never conversation.
+- Never automate DMs or comments. Automated outreach gets accounts banned and destroys the exact trust a personal brand is built on. Automate production, never conversation.
 
-**Cadence:** Founder posts 3 to 5 times per week on LinkedIn. CL repurposes each into IG and TikTok formats within 48 hours.
+**Cadence:** Each participating founder posts 3 to 5 times per week on LinkedIn. CL repurposes each post into IG, YouTube, and TikTok formats within 48 hours. Multiple founders posting multiplies reach.
 
-**KPIs:** Posts published, profile views, inbound DMs, connection requests from ICP titles, content-sourced calls.
+**KPIs:** Founder follower growth, post reach and engagement, profile visits, inbound DMs from ICP titles, clicks to HS, content-sourced calls booked.
 
 ---
 
@@ -182,7 +201,7 @@ Track these every week:
 - Proposals and pitches sent
 - Warm queries caught in communities
 - Targets in active outreach sequence
-- Content posted and inbound DMs
+- Founder content posted, follower growth, and inbound DMs
 - Referrals and partnership conversations
 - New retainers or partners signed (MRR)
 
